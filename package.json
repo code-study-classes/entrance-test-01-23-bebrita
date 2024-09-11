@@ -5,13 +5,14 @@
     "main": "src/index.js",
     "type": "module",
     "dependencies": {
-      "yup": "^1.4.0"
+        "readline-sync": "^1.4.10",
+        "yup": "^1.4.0"
     },
     "devDependencies": {
-      "webpack": "^5.94.0",
-      "webpack-cli": "^5.1.4"
+        "webpack": "^5.94.0",
+        "webpack-cli": "^5.1.4"
     },
     "scripts": {
-      "build": "webpack"
+        "build": "webpack"
     }
-  }
+}
