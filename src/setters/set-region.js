@@ -5,4 +5,4 @@ import readlineSync from 'readline-sync';
 const newRegion = readlineSync.question('New region:').toLowerCase().trim();
 const id = getId('data/regions.csv');
 
-updater('data/regions.csv', `\n${id}|${newData}`);
+updater('data/regions.csv', `\n${id}|${newRegion}`);

@@ -9,5 +9,4 @@ const updater = (fPath, pattern) => {
     fs.appendFileSync(filePath, pattern, 'utf-8');
     return true; 
 }
-
-//`\n${id}|${newData}`
+ export default updater;
