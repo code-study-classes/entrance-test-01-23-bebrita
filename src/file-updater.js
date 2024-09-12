@@ -3,8 +3,11 @@ import fs from 'fs';
 import readlineSync from 'readline-sync';
 import reader from "./file-reader.js";
 
-const filePath = getPath('data/regions.csv');
-const newData = readlineSync.question('New region:').toLowerCase().trim();
-const oldDate = reader('data/regions.csv').length;
-console.log(oldDate);
-fs.appendFileSync(filePath, `\n${id}|${newData}`, 'utf-8');
+const updater = (fPath, pattern) => {
+    const filePath = getPath(fPath);
+    // console.log(oldDate);
+    fs.appendFileSync(filePath, pattern, 'utf-8');
+    return true; 
+}
+
+//`\n${id}|${newData}`
