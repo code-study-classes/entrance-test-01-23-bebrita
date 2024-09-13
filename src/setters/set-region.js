@@ -8,10 +8,9 @@ const setRegion = (name='') => {
         newRegion = readlineSync.question('New region:')
         .toLowerCase().trim();
     } else newRegion = name;
-    
+
     const id = getId('data/regions.csv');
 updater('data/regions.csv', `\n${id}|${newRegion}`);
     return id;
 };
-
 export default setRegion;

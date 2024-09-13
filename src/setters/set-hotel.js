@@ -28,12 +28,12 @@ const setHotel = () => {
             return false;
         }
     };
-
     updater('data/hotels.csv', `\n${id};${newHotel};${regionId}`);
     // пользователь опечатался и такого региона нет
     return true;
 
     };
 
-
 setHotel();
+
+export default setHotel;
