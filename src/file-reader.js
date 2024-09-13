@@ -4,8 +4,7 @@ import fs from 'fs';
 const reader = (fPath) =>{ 
     const filePath = getPath(fPath);
     const fileData = fs.readFileSync(filePath, 'utf-8');
-    console.log(fileData);
-    return fileData;
+    return fileData.split('\n');
 }
 
 export default reader;
